@@ -3,14 +3,14 @@
 from odoo import models, fields
 
 
-class entrenamiento1(models.Model):
-     _name = 'entrenamiento1.entrenamiento1'
-     _description = 'entrenamiento1.entrenamiento1'
+class entrenamiento(models.Model):
+     _name = 'entrenamiento.entrenamiento'
+     _description = 'entrenamiento.entrenamiento'
 
      Nombre = fields.Char()
      Valor = fields.Integer()
      Tipo= fields.Float(compute="_value_pc", store=True)
-     Observación = fields.Text()
+     Observacion = fields.Text()
 #
 #     @api.depends('value')
 #     def _value_pc(self):
